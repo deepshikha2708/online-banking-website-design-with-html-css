@@ -19,26 +19,92 @@
       </div>
       <button type="submit" id="loginButton" href="login.html">Login/Signup</button>
     </nav>
+    <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Card Selection</title>
+    <style>
+        .card {
+            border: 2px solid #ccc;
+            background-color: bisque;
+            
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            display: inline-block;
+            cursor: pointer;
+            transition: border-color 0.3s;
+        }
+
+        .card:hover {
+            border-color: #007BFF;
+        }
+
+        .selected {
+            border-color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <h1>Choose a Card</h1>
+
+    <div class="card" id="card1" onclick="selectCard('card1')">FAQ</div>
+    <div class="card" id="card2" onclick="selectCard('card2')">Issues</div>
     
 
+
+    <script>
+        let selected = null;
+
+        function selectCard(cardId) {
+            if (selected) {
+                document.getElementById(selected).classList.remove("selected");
+            }
+            selected = cardId;
+            document.getElementById(cardId).classList.add("selected");
+            document.getElementById("selectedCard").textContent = cardId;
+        }
+    </script>
+</body>
+</html>
+
+
     <main>
-        <!-- Section 1 -->
+        <!-- Section 1 -
         <section id="section1">
             <h2>Section 1: Frequently Asked Questions</h2>
             <ul>
                 <li>
-                    <h3>Question 1</h3>
+                    <h3>How do I open a bank account?</h3>
                     <p>Answer to Question 1.</p>
                 </li>
                 <li>
-                    <h3>Question 2</h3>
+                    <h3>What is the minimum balance requirement for my account</h3>
                     <p>Answer to Question 2.</p>
                 </li>
-                <!-- Add more Q&A pairs as needed -->
+                <li>
+                    <h3>What is the minimum balance requirement for my account</h3>
+                    <p>Answer to Question 2.</p>
+                </li>
+                <li>
+                    <h3>What is the minimum balance requirement for my account</h3>
+                    <p>Answer to Question 2.</p>
+                </li>
+                <li>
+                    <h3>What is the minimum balance requirement for my account</h3>
+                    <p>Answer to Question 2.</p>
+                </li>
+                <li>
+                    <h3>What is the minimum balance requirement for my account</h3>
+                    <p>Answer to Question 2.</p>
+                </li>
+                 Add more Q&A pairs as needed 
             </ul>
         </section>
 
-        <!-- Section 2 -->
+         Section 2 
         <section id="section2">
             <h2>Section 2: Common Issues</h2>
             <ul>
@@ -50,7 +116,7 @@
                     <h3>Issue 2</h3>
                     <p>Explanation of Issue 2 and how to resolve it.</p>
                 </li>
-                <!-- Add more issue explanations as needed -->
+                 Add more issue explanations as needed -->
             </ul>
         </section>
 
