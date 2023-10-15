@@ -13,80 +13,88 @@
 - White: hsl(0, 0%, 100%) */
 
 * {
-  margin: 0;
-  padding: 0;
+  margin: 10;
+  padding: 2;
   box-sizing: border-box;
 }
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .nav-bar {
+  height: 160px;
   display: flex;
   justify-content: space-around;
+  background-color: rgb(7, 5, 43);
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-block: 5px 5px;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
 }
 .nav-items > a {
   text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: hsl(233, 8%, 62%);
-  margin-left: 10px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: hsl(233, 26%, 93%);
+  margin-left: 30px;
 }
 .nav-bar > button {
-  padding: 12px 28px;
+  padding: 20px 48px;
   border: none;
   outline-width: 0;
-  color: white;
+  color: rgb(7, 5, 43);
   border-radius: 24px;
   cursor: pointer;
   font-weight: 400;
+  font-size: 20px;
   background-image: linear-gradient(
     120deg,
     hsl(192, 70%, 51%),
     hsl(136, 65%, 51%)
   );
+}
+a href:hover {
+  color: yellow;
+
 }
 .hero-section {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: right;
   height: 90vh;
+  color: rgb(19, 19, 19);
 }
-.hero-img-container {
-  background-image: url('./images/bg-intro-desktop.svg');
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  padding-top: 20px;
-}
-.hero-img-container > img {
-  width: 500px;
-}
+
 .hero-text-container {
+  color: aquamarine;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  
 }
 .hero-text-container > h1 {
-  font-size: 70px;
-  font-weight: 800;
+  
+  font-size: 28px;
+  font-weight: 800px;
   margin-bottom: 20px;
-  color: hsl(233, 26%, 24%);
+  color: hsl(96, 79%, 64%);
   line-height: 1.1;
 }
 .hero-text-container > p {
-  color: hsl(233, 8%, 62%);
+  
+  color: hsla(240, 21%, 9%, 0.985);
   margin-bottom: 15px;
+  font-size:22px;
   font-weight: 700;
 }
+
 .hero-text-container > button {
   padding: 12px 28px;
   border: none;
   outline-width: 0;
-  color: white;
+  position: absolute;
+  color: rgb(249, 250, 250);
   border-radius: 24px;
   cursor: pointer;
   font-weight: 400;
@@ -95,9 +103,17 @@ body {
     hsl(192, 70%, 51%),
     hsl(136, 65%, 51%)
   );
+
 }
+.hero-video {
+  flex: 1;
+  text-align: right; 
+  position: relative;
+}
+
+
 .container {
-  background-color: hsl(220, 16%, 96%);
+  background-color: hsl(200, 7%, 82%);
 }
 .why-us {
   padding-top: 10vh;
@@ -108,12 +124,12 @@ body {
 }
 .why-us > h1 {
   font-size: 45px;
-  font-weight: 800;
+  font-weight: 900;
   margin-bottom: 20px;
   color: hsl(233, 26%, 24%);
 }
 .why-us > p {
-  color: hsl(233, 8%, 62%);
+  color: hsl(230, 4%, 30%);
   margin-bottom: 15px;
   font-weight: 700;
 }
@@ -131,16 +147,17 @@ body {
   margin-bottom: 5px;
 }
 .feature-item > h1 {
-  font-size: 25px;
-  font-weight: 800;
+  font-size: 30px;
+  font-weight: 500;
   margin-bottom: 10px;
   color: hsl(233, 26%, 24%);
 }
 .feature-item > p {
-  color: hsl(233, 8%, 62%);
+  color: hsl(240, 1%, 33%);
   font-weight: 700;
 }
 .blog-section {
+  background-color: antiquewhite;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -157,16 +174,16 @@ body {
 }
 .blog-section > h1 {
   font-size: 45px;
-  margin-left: 1.25rem;
+  margin-left: 23rem;
   font-weight: 800;
   margin-bottom: 10px;
   color: hsl(233, 26%, 24%);
 }
 .article {
-  height: max-content;
+  height: 600px;
   width: 250px;
   margin-top: 20px;
-  margin-left: 15px;
+  margin-left: 38px;
   background-color: #fff;
 }
 .article > img {
@@ -186,8 +203,12 @@ body {
   padding-bottom: 5px;
   padding-top: 5px;
 }
+/* styles.css */
+
+
+
 .footer {
-  background-color: hsl(233, 26%, 24%);
+  background-color: rgb(7, 5, 43);;
   height: 30vh;
 }
 .footer-container {
@@ -224,7 +245,7 @@ body {
   padding: 12px 28px;
   border: none;
   outline-width: 0;
-  color: white;
+  color: rgb(243, 237, 237);
   border-radius: 24px;
   cursor: pointer;
   font-weight: 400;
