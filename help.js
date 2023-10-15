@@ -9,6 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     issueCard.addEventListener('click', function () {
-        window.location.href = 'issue.html'; // Redirect to the Issue page
+        window.location.href = 'issues.html'; // Redirect to the Issue page
     });
 });
